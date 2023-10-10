@@ -5,20 +5,34 @@ Problem statement: To build a CNN based model which can accurately detect melano
 
 
 ## General Information
-There was the 2239 images for the 9 classes in the training dataset
-There was 447 images for the validation data set
-Data set for training was divided in two traininig set and validation set with 80 and 20 percent respectively
-Datset images was set into 180 * 180 image height weight and a batch of 32 was created
+There was the 2239 images for the 9 classes in the training dataset.
+
+There was 447 images for the validation data set.
+
+Data set for training was divided in two traininig set and validation set with 80 and 20 percent respectively.
+
+Datset images was set into 180 * 180 image height weight and a batch of 32 was created.
+
 Data was trained and validated using keras.
-First model was created with 3 convolution layer and 3 max pooling after rescaling 
-Activation used was relu and padding same . 
-Last layer used was softmax before that flatten followed by dense layer 
+
+First model was created with 3 convolution layer and 3 max pooling after rescaling.
+
+Activation used was relu and padding same.
+
+Last layer used was softmax before that flatten followed by dense layer.
+
 Model was compiled optimizer='adam' and loss='sparse_categorical_crossentropy'
+
 Model was trained using 20 epochs
+
 Second Model created after augmentation and using the Dropout
+
 The model used 3 convolution , 3 Dropout ,Flatten, Dense layer with relu Activation in the threelayers and the softmax in the final layer
+
 Third model was created after class imbalance was the handled . 
+
 Third model used the 2 convolution and 3 dropouts followed by flatten and Dense layer.
+
 Third model was done with 30  epochs
 
 
